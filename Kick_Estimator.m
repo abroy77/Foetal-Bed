@@ -31,7 +31,6 @@ signal_center = abs((signal-mean(signal))/std(signal));
 max_pks_sections = movmax(pks, length(signal)/25);
 
 %Plot top five peaks
-figure(1); plot(time, signal_center, time(max_five_locs), max_five_pks,'or')
 figure(1); plot(time, signal)
 xlabel('Time (s)');
 ylabel('Amplitude');
